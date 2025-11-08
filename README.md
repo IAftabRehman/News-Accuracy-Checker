@@ -70,16 +70,6 @@ Got suggestions or feedback? Feel free to contact:
 🧑‍💻 **GitHub:** [IAftabRehman](https://github.com/IAftabRehman)  
 💼 **LinkedIn:** [Aftab Rehman](https://www.linkedin.com/in/aftab-rehman)
 
----
-
-### 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=IAftabRehman&show_icons=true&theme=tokyonight" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IAftabRehman&layout=compact&theme=tokyonight" height="180"/>
-</div>
-
----
 
 <p align="center">
   🌟 Star this repo if it helped you!  
