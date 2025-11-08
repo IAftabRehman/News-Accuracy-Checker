@@ -1,0 +1,138 @@
+/* GENERAL */
+body { 
+    margin:0; 
+    font-family: Arial, sans-serif; 
+}
+
+.container { 
+    width: 95%; 
+    margin: auto; 
+}
+
+header { 
+    background: red; 
+    color: #fff; 
+    padding: 10px 0; 
+}
+
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    
+}
+
+.headerLogo{
+    height: 10px;
+    width: 10px;
+}
+.logo h2 { 
+    margin: 0; 
+    font-size: 20px;
+}
+.logo img {
+    width: 50px;     /* adjust width */
+    height: auto;     /* maintain aspect ratio */
+}
+
+.nav-links a { 
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    transition: 0.3s; 
+}
+
+.nav-links a:hover { 
+    color: #ff9900; 
+}
+
+/* SLIDER */
+.slider { 
+    position: relative;
+    overflow: hidden; 
+    margin-top: 20px; 
+}
+
+.slides { 
+    display: flex; 
+    transition: 0.5s; 
+}
+
+.slide { 
+    min-width: 100%; 
+    position: relative; 
+}
+
+.slide img { 
+    width: 100%; 
+    display: block;
+}
+
+.slide-caption { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+/* FOOTER */
+footer { 
+    background: #1f1f1f; 
+    color: #fff; 
+    margin-top: 20px; 
+    padding: 20px 0; 
+}
+
+.footer-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.footer-left, .footer-center, .footer-right { 
+    margin-bottom: 10px; 
+}
+
+.footer-left a, .footer-right a { 
+    display: block; 
+    color: #fff; 
+    text-decoration: none; 
+    margin-top: 5px; 
+}
+
+.footer-left a:hover, .footer-right a:hover { 
+    color: #ff9900; 
+}
+
+.footer-center { 
+    text-align: center; 
+    flex: 1; 
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .logo h2 { font-size: 18px; }
+    .logo img { width: 80px; }
+
+    .header-container, .footer-container { 
+        display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+        
+    }
+
+    .nav-links { 
+        margin-top: 10px; 
+    }
+
+    .footer-center {
+         order: 2; 
+         margin: 10px 0; 
+        }
+}
