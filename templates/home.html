@@ -28,17 +28,18 @@
 <section class="slider">
     <div class="slides">
         <div class="slide active">
-            <img src="{% static 'images/logo.png'%}" alt="Slide 1">
-            <div class="slide-caption">Check any news for accuracy instantly!</div>
+            <img src="{% static 'images/firstSlider.jpg'%}" alt="Slide 1">
         </div>
         <div class="slide">
-            <img src="images/logo.png" alt="Slide 2">
-            <div class="slide-caption">Trusted sources at your fingertips.</div>
+            <img src="{% static 'images/secondSlider.jpg'%}" alt="Slide 2">
         </div>
         <div class="slide">
-            <img src="images/logo.png" alt="Slide 3">
-            <div class="slide-caption">Stay informed, stay accurate.</div>
+            <img src="{% static 'images/thirdSlider.jpg'%}" alt="Slide 3">
         </div>
+        <div class="slide">
+            <img src="{% static 'images/fourthSlider.jpg'%}" alt="Slide 4">
+        </div>
+        
     </div>
 </section>
 
@@ -47,9 +48,9 @@
     <div class="container footer-container">
         <div class="footer-left">
             <h3>Follow Us</h3>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/iaftabrehman/" target="_blank">Facebook</a>
+            <a href="https://x.com/iaftabrehman" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/aftab-rehman/" target="_blank">LinkedIn</a>
         </div>
         <div class="footer-center">
             <p>&copy; 2025 News Accuracy Checker. All rights reserved.</p>
@@ -62,6 +63,6 @@
     </div>
 </footer>
 
-<script src="js/home.js"></script>
+<script src="{% static 'js/home.js' %}"></script>
 </body>
 </html>

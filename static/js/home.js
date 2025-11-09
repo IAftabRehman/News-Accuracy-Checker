@@ -11,4 +11,8 @@ function nextSlide(){
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 4000); // Change slide every 4 sec
+// Initialize first slide
+showSlide(currentSlide);
+
+// Change slide every 4 seconds
+setInterval(nextSlide, 4000);
