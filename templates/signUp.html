@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Register - News Accuracy Checker</title>
+    <link rel="stylesheet" href="{% static 'css/signUp.css' %}">
+</head>
+<body>
+
+<div class="reg-wrapper">
+    <div class="reg-card">
+        <h1 class="brand">NewsCheck</h1>
+        <p class="sub">Create your account — simple & quick</p>
+
+        <form action="{% url 'home' %}" method="post" class="reg-form">
+            {% csrf_token %}
+            <div class="form-row">
+                <label for="full_name">Full Name</label>
+                <input id="full_name" name="full_name" type="text" placeholder="Aftab Ur Rehman" required>
+            </div>
+
+            <div class="form-row small">
+                <div>
+                    <label for="age">Age</label>
+                    <input id="age" name="age" type="number" min="1" max="120" placeholder="21" required>
+                </div>
+                <div>
+                    <label for="phone">Phone (optional)</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+92 300 0000000">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <div class="pwd-wrap">
+                    <input id="password" name="password" type="password" placeholder="Choose a strong password" required>
+                    <button type="button" id="togglePwd" class="pwd-btn" aria-label="toggle password">Show</button>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" class="submit-btn">Create Account</button>
+            </div>
+
+            {% comment %} <p class="hint">Already have account? <a href="{% url 'login' %}">Login</a></p> {% endcomment %}
+        </form>
+    </div>
+</div>
+
+<script>
+document.getElementById('togglePwd').addEventListener('click', function(){
+    const p = document.getElementById('password');
+    if (p.type === 'password') {
+        p.type = 'text';
+        this.textContent = 'Hide';
+    } else {
+        p.type = 'password';
+        this.textContent = 'Show';
+    }
+});
+</script>
+
+</body>
+</html>
